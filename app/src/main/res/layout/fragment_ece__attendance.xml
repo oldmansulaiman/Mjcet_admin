@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.androidtutorialpoint.cardviewtutorial.BranchFragments.Ece_AttendanceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ece_att_first_text"
+            android:text="@string/first_year"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+        <ImageButton
+            android:id="@+id/ece_att_first_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_1_a"
+            android:layout_below="@+id/ece_att_first_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_1_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/ece_att_first_text"
+            android:layout_toRightOf="@+id/ece_att_first_a"
+            android:id="@+id/ece_att_first_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ece_att_second_text"
+            android:text="@string/second_year"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/ece_att_first_a"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+        <ImageButton
+            android:id="@+id/ece_att_second_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_2_a"
+            android:layout_below="@+id/ece_att_second_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_2_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/ece_att_second_text"
+            android:layout_toRightOf="@+id/ece_att_second_a"
+            android:id="@+id/ece_att_second_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ece_att_third_text"
+            android:text="@string/third_year"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/ece_att_second_a"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/ece_att_third_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_3_a"
+            android:layout_below="@+id/ece_att_third_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_3_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/ece_att_third_text"
+            android:layout_toRightOf="@+id/ece_att_second_a"
+            android:id="@+id/ece_att_third_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ece_att_fourth_text"
+            android:text="@string/fourth_year"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/ece_att_third_a"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+        <ImageButton
+            android:id="@+id/ece_att_fourth_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_4_a"
+            android:layout_below="@+id/ece_att_fourth_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ece_att_4_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/ece_att_fourth_text"
+            android:layout_toRightOf="@+id/ece_att_second_a"
+            android:id="@+id/ece_att_fourth_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

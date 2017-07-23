@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidtutorialpoint.cardviewtutorial.BranchFragments.Mech_MarksFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mech_marks_first_text"
+            android:text="@string/first_year"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+        <ImageButton
+            android:id="@+id/mech_marks_first_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_1_a"
+            android:layout_below="@+id/mech_marks_first_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_1_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/mech_marks_first_text"
+            android:layout_toRightOf="@+id/mech_marks_first_a"
+            android:id="@+id/mech_marks_first_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mech_marks_second_text"
+            android:text="@string/second_year"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/mech_marks_first_a"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+        <ImageButton
+            android:id="@+id/mech_marks_second_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_2_a"
+            android:layout_below="@+id/mech_marks_second_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_2_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/mech_marks_second_text"
+            android:layout_toRightOf="@+id/mech_marks_second_a"
+            android:id="@+id/mech_marks_second_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mech_marks_third_text"
+            android:text="@string/third_year"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/mech_marks_second_a"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/mech_marks_third_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_3_a"
+            android:layout_below="@+id/mech_marks_third_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_3_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/mech_marks_third_text"
+            android:layout_toRightOf="@+id/mech_marks_second_a"
+            android:id="@+id/mech_marks_third_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mech_marks_fourth_text"
+            android:text="@string/fourth_year"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/mech_marks_third_a"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+        <ImageButton
+            android:id="@+id/mech_marks_fourth_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_4_a"
+            android:layout_below="@+id/mech_marks_fourth_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_a"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mech_marks_4_b"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/mech_marks_fourth_text"
+            android:layout_toRightOf="@+id/mech_marks_second_a"
+            android:id="@+id/mech_marks_fourth_b"
+            android:src="@drawable/button_b"
+            android:background="@null"
+            />
+    </RelativeLayout>
+</ScrollView>
