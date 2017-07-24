@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.androidtutorialpoint.cardviewtutorial.About_usFragment;
+import com.androidtutorialpoint.cardviewtutorial.MiscActivities.About_usFragment;
 import com.androidtutorialpoint.cardviewtutorial.AttendanceActivities.IT.It_Att_First_A_Activity;
 import com.androidtutorialpoint.cardviewtutorial.AttendanceActivities.IT.It_Att_First_B_Activity;
 import com.androidtutorialpoint.cardviewtutorial.AttendanceActivities.IT.It_Att_Fourth_A_Activity;
@@ -27,7 +27,7 @@ import com.androidtutorialpoint.cardviewtutorial.MarksActivities.MarksActivities
 import com.androidtutorialpoint.cardviewtutorial.MarksActivities.MarksActivities.IT.It_Mar_Third_A_Activity;
 import com.androidtutorialpoint.cardviewtutorial.MarksActivities.MarksActivities.IT.It_Mar_Third_B_Activity;
 import com.androidtutorialpoint.cardviewtutorial.R;
-import com.androidtutorialpoint.cardviewtutorial.ViewPagerAdapter;
+import com.androidtutorialpoint.cardviewtutorial.MiscActivities.ViewPagerAdapter;
 
 public class ItActivity extends AppCompatActivity {
 

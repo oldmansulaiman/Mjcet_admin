@@ -1,4 +1,4 @@
-package com.androidtutorialpoint.cardviewtutorial;
+package com.androidtutorialpoint.cardviewtutorial.MiscActivities;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.androidtutorialpoint.cardviewtutorial.AttendanceActivities.Civil.Civil_Att_First_A_Activity;
+import com.androidtutorialpoint.cardviewtutorial.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

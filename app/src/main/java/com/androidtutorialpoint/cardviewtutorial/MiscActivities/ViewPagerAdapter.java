@@ -1,4 +1,4 @@
-package com.androidtutorialpoint.cardviewtutorial;
+package com.androidtutorialpoint.cardviewtutorial.MiscActivities;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,6 +15,12 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     ArrayList<Fragment> fragments = new ArrayList<>();
     ArrayList<String> tabTitles = new ArrayList<>();
 
+    public ViewPagerAdapter(FragmentManager fm) {
+
+        super(fm);
+
+    }
+
     public void addFragments(Fragment fragments,String titles)
     {
         this.fragments.add(fragments);
@@ -23,11 +29,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     }
 
-    public ViewPagerAdapter(FragmentManager fm){
-
-        super(fm);
-
-    }
     @Override
     public Fragment getItem(int position) {
         return fragments.get(position);

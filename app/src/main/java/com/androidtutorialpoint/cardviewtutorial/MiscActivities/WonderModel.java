@@ -1,4 +1,4 @@
-package com.androidtutorialpoint.cardviewtutorial;
+package com.androidtutorialpoint.cardviewtutorial.MiscActivities;
 
 /**
  * Created by anonymous on 1/15/16.

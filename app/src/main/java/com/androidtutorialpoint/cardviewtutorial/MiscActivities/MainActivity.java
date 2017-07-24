@@ -1,4 +1,4 @@
-package com.androidtutorialpoint.cardviewtutorial;
+package com.androidtutorialpoint.cardviewtutorial.MiscActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
+import com.androidtutorialpoint.cardviewtutorial.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.androidtutorialpoint.cardviewtutorial;
+package com.androidtutorialpoint.cardviewtutorial.MiscActivities;
 
         import android.content.ContentResolver;
         import android.content.Context;
@@ -21,6 +21,7 @@ package com.androidtutorialpoint.cardviewtutorial;
         import com.androidtutorialpoint.cardviewtutorial.BranchActivities.EeeActivity;
         import com.androidtutorialpoint.cardviewtutorial.BranchActivities.ItActivity;
         import com.androidtutorialpoint.cardviewtutorial.BranchActivities.MechActivity;
+        import com.androidtutorialpoint.cardviewtutorial.R;
 
         import java.util.ArrayList;
 
@@ -63,6 +64,24 @@ public class CardFragment extends Fragment {
 
     }
 
+    public void initializeList() {
+        listitems.clear();
+
+        for (int i = 0; i < 7; i++) {
+
+
+            WonderModel item = new WonderModel();
+            item.setCardName(Wonders[i]);
+            item.setImageResourceId(Images[i]);
+            item.setIsfav(0);
+            item.setIsturned(0);
+            listitems.add(item);
+
+        }
+
+
+    }
+
     public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         private ArrayList<WonderModel> list;
 
@@ -97,11 +116,11 @@ public class CardFragment extends Fragment {
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
+        private final Context context;
         public TextView titleTextView;
         public ImageView coverImageView;
         public ImageView likeImageView;
         public ImageView shareImageView;
-        private final Context context;
 
         public MyViewHolder(View v) {
             super(v);
@@ -175,25 +194,5 @@ public class CardFragment extends Fragment {
 
 
         }
-    }
-
-    public void initializeList() {
-        listitems.clear();
-
-        for(int i =0;i<7;i++){
-
-
-            WonderModel item = new WonderModel();
-            item.setCardName(Wonders[i]);
-            item.setImageResourceId(Images[i]);
-            item.setIsfav(0);
-            item.setIsturned(0);
-            listitems.add(item);
-
-        }
-
-
-
-
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@mipmap/login_back"
     android:orientation="vertical"
-    tools:context="com.androidtutorialpoint.cardviewtutorial.LoginActivity">
+    tools:context="com.androidtutorialpoint.cardviewtutorial.MiscActivities.LoginActivity">
 
 
     <ImageView

@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".MiscActivities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -117,8 +117,8 @@
         <activity android:name=".MarksActivities.MarksActivities.Mech.Mech_Mar_Third_B_Activity" />
         <activity android:name=".MarksActivities.MarksActivities.Mech.Mech_Mar_Fourth_A_Activity" />
         <activity android:name=".MarksActivities.MarksActivities.Mech.Mech_Mar_Fourth_B_Activity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ResetPasswordActivity"></activity>
+        <activity android:name=".MiscActivities.MainActivity" />
+        <activity android:name=".MiscActivities.ResetPasswordActivity"></activity>
     </application>
 
 </manifest>
