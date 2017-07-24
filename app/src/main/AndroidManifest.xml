@@ -117,7 +117,8 @@
         <activity android:name=".MarksActivities.MarksActivities.Mech.Mech_Mar_Third_B_Activity" />
         <activity android:name=".MarksActivities.MarksActivities.Mech.Mech_Mar_Fourth_A_Activity" />
         <activity android:name=".MarksActivities.MarksActivities.Mech.Mech_Mar_Fourth_B_Activity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ResetPasswordActivity"></activity>
     </application>
 
 </manifest>

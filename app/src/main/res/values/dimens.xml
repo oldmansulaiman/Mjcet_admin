@@ -10,5 +10,6 @@
     <dimen name="card_height">250dip</dimen>
     <dimen name="text_size">18sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="logo_w_h">100dp</dimen>
 
 </resources>

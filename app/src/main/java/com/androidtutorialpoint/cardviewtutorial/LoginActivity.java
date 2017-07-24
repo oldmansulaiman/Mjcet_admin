@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.androidtutorialpoint.cardviewtutorial.AttendanceActivities.Civil.Civil_Att_First_A_Activity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginActivity";
-    private Button btnLogin;
+    private Button btnLogin, btnReset;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
     private EditText loginInputEmail, loginInputPassword;
@@ -51,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         loginInputLayoutEmail = (TextInputLayout) findViewById(R.id.login_input_layout_email);
         loginInputLayoutPassword = (TextInputLayout) findViewById(R.id.login_input_layout_password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
-
+        btnReset = (Button) findViewById(R.id.btn_reset_password);
         loginInputEmail = (EditText) findViewById(R.id.login_input_email);
         loginInputPassword = (EditText) findViewById(R.id.login_input_password);
 
@@ -64,6 +65,12 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    public void reset_btn(View view) {
+        Intent intent = new Intent(this, ResetPasswordActivity.class);
+        startActivity(intent);
     }
 
     /**

@@ -17,6 +17,11 @@
     <string name="err_msg_required">Required !!</string>
     <string name="err_msg_password">Enter a valid password with min 6 characters.</string>
     <string name="btn_link_to_signup">Don\'t have an account, Signup !!</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="btn_forgot_password">Reset your password?</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
