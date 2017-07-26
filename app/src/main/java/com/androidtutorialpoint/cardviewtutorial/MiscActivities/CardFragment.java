@@ -19,7 +19,7 @@ package com.androidtutorialpoint.cardviewtutorial.MiscActivities;
         import com.androidtutorialpoint.cardviewtutorial.BranchActivities.CseActivity;
         import com.androidtutorialpoint.cardviewtutorial.BranchActivities.EceActivity;
         import com.androidtutorialpoint.cardviewtutorial.BranchActivities.EeeActivity;
-        import com.androidtutorialpoint.cardviewtutorial.BranchActivities.ItActivity;
+        import com.androidtutorialpoint.cardviewtutorial.BranchActivities.InfoTechActivity;
         import com.androidtutorialpoint.cardviewtutorial.BranchActivities.MechActivity;
         import com.androidtutorialpoint.cardviewtutorial.R;
 
@@ -153,7 +153,7 @@ public class CardFragment extends Fragment {
                     }
 
                     else if (getPosition() == 4) {
-                        Intent intent = new Intent(context, ItActivity.class);
+                        Intent intent = new Intent(context, InfoTechActivity.class);
                         context.startActivity(intent);
                     }
                     else if (getPosition() == 5) {

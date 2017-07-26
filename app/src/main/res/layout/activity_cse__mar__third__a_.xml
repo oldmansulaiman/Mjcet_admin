@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.androidtutorialpoint.cardviewtutorial.MarksActivities.MarksActivities.Cse.Cse_Mar_Third_A_Activity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cse mar 3 a" />
+
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.androidtutorialpoint.cardviewtutorial.BranchFragments.InfoTech_AttendanceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/infotech_att_first_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal"
+            android:text="@string/first_year"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/infotech_att_first_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_first_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:onClick="infotech_att_1_a"
+            android:src="@drawable/button_a" />
+
+        <ImageButton
+            android:id="@+id/infotech_att_first_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_first_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/infotech_att_first_a"
+            android:background="@null"
+            android:onClick="infotech_att_1_b"
+            android:src="@drawable/button_b" />
+
+        <TextView
+            android:id="@+id/infotech_att_second_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_first_a"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/second_year"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/infotech_att_second_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_second_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:onClick="infotech_att_2_a"
+            android:src="@drawable/button_a" />
+
+        <ImageButton
+            android:id="@+id/infotech_att_second_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_second_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/infotech_att_second_a"
+            android:background="@null"
+            android:onClick="infotech_att_2_b"
+            android:src="@drawable/button_b" />
+
+
+        <TextView
+            android:id="@+id/infotech_att_third_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_second_a"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/third_year"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/infotech_att_third_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_third_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:onClick="infotech_att_3_a"
+            android:src="@drawable/button_a" />
+
+        <ImageButton
+            android:id="@+id/infotech_att_third_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_third_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/infotech_att_second_a"
+            android:background="@null"
+            android:onClick="infotech_att_3_b"
+            android:src="@drawable/button_b" />
+
+        <TextView
+            android:id="@+id/infotech_att_fourth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_third_a"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/fourth_year"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/infotech_att_fourth_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_fourth_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:onClick="infotech_att_4_a"
+            android:src="@drawable/button_a" />
+
+        <ImageButton
+            android:id="@+id/infotech_att_fourth_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotech_att_fourth_text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/infotech_att_second_a"
+            android:background="@null"
+            android:onClick="infotech_att_4_b"
+            android:src="@drawable/button_b" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

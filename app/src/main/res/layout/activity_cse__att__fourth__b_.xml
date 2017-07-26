@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.androidtutorialpoint.cardviewtutorial.AttendanceActivities.Cse.Cse_Att_Fourth_B_Activity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cse att 4 b" />
+
 </android.support.constraint.ConstraintLayout>

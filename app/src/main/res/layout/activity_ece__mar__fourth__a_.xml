@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.androidtutorialpoint.cardviewtutorial.MarksActivities.MarksActivities.Ece.Ece_Mar_Fourth_A_Activity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ece mar 4 a" />
+
 </android.support.constraint.ConstraintLayout>

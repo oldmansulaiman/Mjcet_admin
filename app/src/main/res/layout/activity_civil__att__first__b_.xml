@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.androidtutorialpoint.cardviewtutorial.AttendanceActivities.Civil.Civil_Att_First_B_Activity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="civil att 1 b" />
+
 </android.support.constraint.ConstraintLayout>
