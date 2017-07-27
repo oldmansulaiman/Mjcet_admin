@@ -68,7 +68,7 @@ public class InfoTech_Mar_Fourth_A_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (rb1.isChecked()) {
+                if (rb1.isChecked()) {//comit
                     myref.child("it").child("IV Year").child("Sec A").child("001").child("MWT").setValue(edt1.getText().toString());
                     myref.child("it").child("IV Year").child("Sec A").child("002").child("MWT").setValue(edt2.getText().toString());
                     myref.child("it").child("IV Year").child("Sec A").child("003").child("MWT").setValue(edt3.getText().toString());
