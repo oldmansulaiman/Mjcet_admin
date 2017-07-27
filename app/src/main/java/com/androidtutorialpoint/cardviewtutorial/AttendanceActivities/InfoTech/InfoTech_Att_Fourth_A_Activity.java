@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.androidtutorialpoint.cardviewtutorial.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -87,220 +90,230 @@ public class InfoTech_Att_Fourth_A_Activity extends AppCompatActivity {
         Button btn32 = (Button) findViewById(R.id.btn_032);
         Button btn33 = (Button) findViewById(R.id.btn_033);
 
+        FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        String uid = currentFirebaseUser.getUid();
+
+        if (uid.equals((myref.child("users").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1")).toString())) {
+            Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_LONG).show();
+
+        } else {
+            Toast.makeText(getApplicationContext(), "fail", Toast.LENGTH_LONG).show();
+        }
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("001").child("Attendance").setValue(edt1.getText().toString());
+                myref.child("users").child("UID").child("ZWzIfIUFjHZ53mcja4NmHg3gbWx1").child("attendance").setValue(edt1.getText().toString());
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("002").child("Attendance").setValue(edt2.getText().toString());
+                myref.child("users").child("UID").child("iSX7BobuWdYymZgiI2CCl1Scris1").child("attendance").setValue(edt2.getText().toString());
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("003").child("Attendance").setValue(edt3.getText().toString());
+                myref.child("users").child("UID").child("WuRgtqRPHRWeqCT4Iiy6cNqrJO52").child("attendance").setValue(edt3.getText().toString());
             }
         });
 
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("004").child("Attendance").setValue(edt4.getText().toString());
+                myref.child("users").child("UID").child("7JJpJNiR7lNENWzNEAnm72xQPr23").child("attendance").setValue(edt4.getText().toString());
             }
         });
 
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("005").child("Attendance").setValue(edt5.getText().toString());
+                myref.child("users").child("UID").child("KIgQ5xKfoOQ5TZGeqaVHmR8l7Bs2").child("attendance").setValue(edt5.getText().toString());
             }
         });
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("006").child("Attendance").setValue(edt6.getText().toString());
+                myref.child("users").child("UID").child("e4aMvuDm1rZytl60OP91kVP2EAw1").child("attendance").setValue(edt6.getText().toString());
             }
         });
 
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("007").child("Attendance").setValue(edt7.getText().toString());
+                myref.child("users").child("UID").child("nQsxL5ueaEPFQn6cwcMdlumMyl93").child("attendance").setValue(edt7.getText().toString());
             }
         });
 
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("008").child("Attendance").setValue(edt8.getText().toString());
+                myref.child("users").child("UID").child("Cfz5LkLVMpfAs6rxgNSWRpETWTA2").child("attendance").setValue(edt8.getText().toString());
             }
         });
 
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("009").child("Attendance").setValue(edt9.getText().toString());
+                myref.child("users").child("UID").child("FZ03ydMj3iZEBhqkTblmElJ0F2I2").child("attendance").setValue(edt9.getText().toString());
             }
         });
 
         btn10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("010").child("Attendance").setValue(edt10.getText().toString());
+                myref.child("users").child("UID").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").child("attendance").setValue(edt10.getText().toString());
             }
         });
 
         btn12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("012").child("Attendance").setValue(edt12.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt12.getText().toString());
             }
         });
 
         btn13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("013").child("Attendance").setValue(edt13.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt13.getText().toString());
             }
         });
 
         btn14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("014").child("Attendance").setValue(edt14.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt14.getText().toString());
             }
         });
 
         btn15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("015").child("Attendance").setValue(edt15.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt15.getText().toString());
             }
         });
 
         btn16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("017").child("Attendance").setValue(edt17.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt17.getText().toString());
             }
         });
 
         btn18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("018").child("Attendance").setValue(edt18.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt18.getText().toString());
             }
         });
 
         btn19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("019").child("Attendance").setValue(edt19.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt19.getText().toString());
             }
         });
 
         btn20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("020").child("Attendance").setValue(edt20.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt20.getText().toString());
             }
         });
 
         btn21.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("021").child("Attendance").setValue(edt21.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt21.getText().toString());
             }
         });
 
         btn22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("022").child("Attendance").setValue(edt22.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt22.getText().toString());
             }
         });
 
         btn23.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("023").child("Attendance").setValue(edt23.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt23.getText().toString());
             }
         });
 
         btn24.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("024").child("Attendance").setValue(edt24.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt24.getText().toString());
             }
         });
 
         btn25.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("025").child("Attendance").setValue(edt25.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt25.getText().toString());
             }
         });
 
         btn26.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("026").child("Attendance").setValue(edt26.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt26.getText().toString());
             }
         });
 
         btn27.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("027").child("Attendance").setValue(edt27.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt27.getText().toString());
             }
         });
 
         btn28.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("028").child("Attendance").setValue(edt28.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt28.getText().toString());
             }
         });
 
         btn29.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("029").child("Attendance").setValue(edt29.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt29.getText().toString());
             }
         });
 
         btn30.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("030").child("Attendance").setValue(edt30.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt30.getText().toString());
             }
         });
 
         btn31.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("031").child("Attendance").setValue(edt31.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt31.getText().toString());
             }
         });
 
         btn32.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("032").child("Attendance").setValue(edt32.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt32.getText().toString());
             }
         });
 
         btn33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myref.child("it").child("IV Year").child("Sec A").child("033").child("Attendance").setValue(edt33.getText().toString());
+                myref.child("users").child("UID").child("Sec A").child("attendance").setValue(edt33.getText().toString());
             }
         });
 

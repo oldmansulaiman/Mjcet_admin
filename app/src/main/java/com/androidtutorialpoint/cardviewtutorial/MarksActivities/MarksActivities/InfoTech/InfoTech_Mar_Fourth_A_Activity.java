@@ -6,8 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import com.androidtutorialpoint.cardviewtutorial.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -69,146 +72,68 @@ public class InfoTech_Mar_Fourth_A_Activity extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (rb1.isChecked()) {//comit
-                    myref.child("it").child("IV Year").child("Sec A").child("001").child("MWT").setValue(edt1.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("002").child("MWT").setValue(edt2.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("003").child("MWT").setValue(edt3.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("004").child("MWT").setValue(edt4.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("005").child("MWT").setValue(edt5.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("006").child("MWT").setValue(edt6.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("007").child("MWT").setValue(edt7.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("008").child("MWT").setValue(edt8.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("009").child("MWT").setValue(edt9.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("010").child("MWT").setValue(edt10.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("012").child("MWT").setValue(edt12.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("013").child("MWT").setValue(edt13.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("014").child("MWT").setValue(edt14.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("015").child("MWT").setValue(edt15.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("016").child("MWT").setValue(edt16.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("017").child("MWT").setValue(edt17.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("018").child("MWT").setValue(edt18.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("019").child("MWT").setValue(edt19.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("020").child("MWT").setValue(edt20.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("021").child("MWT").setValue(edt21.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("022").child("MWT").setValue(edt22.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("023").child("MWT").setValue(edt23.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("024").child("MWT").setValue(edt24.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("025").child("MWT").setValue(edt25.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("026").child("MWT").setValue(edt26.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("027").child("MWT").setValue(edt27.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("028").child("MWT").setValue(edt28.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("029").child("MWT").setValue(edt29.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("030").child("MWT").setValue(edt30.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("031").child("MWT").setValue(edt31.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("032").child("MWT").setValue(edt32.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("033").child("MWT").setValue(edt33.getText().toString());
+                    myref.child("users").child("UID").child("ZWzIfIUFjHZ53mcja4NmHg3gbWx1").child("MWT").setValue(edt1.getText().toString());
+                    myref.child("users").child("UID").child("iSX7BobuWdYymZgiI2CCl1Scris1").child("MWT").setValue(edt2.getText().toString());
+                    myref.child("users").child("UID").child("WuRgtqRPHRWeqCT4Iiy6cNqrJO52").child("MWT").setValue(edt3.getText().toString());
+                    myref.child("users").child("UID").child("7JJpJNiR7lNENWzNEAnm72xQPr23").child("MWT").setValue(edt4.getText().toString());
+                    myref.child("users").child("UID").child("KIgQ5xKfoOQ5TZGeqaVHmR8l7Bs2").child("MWT").setValue(edt5.getText().toString());
+                    myref.child("users").child("UID").child("e4aMvuDm1rZytl60OP91kVP2EAw1").child("MWT").setValue(edt6.getText().toString());
+                    myref.child("users").child("UID").child("nQsxL5ueaEPFQn6cwcMdlumMyl93").child("MWT").setValue(edt7.getText().toString());
+                    myref.child("users").child("UID").child("Cfz5LkLVMpfAs6rxgNSWRpETWTA2").child("MWT").setValue(edt8.getText().toString());
+                    myref.child("users").child("UID").child("FZ03ydMj3iZEBhqkTblmElJ0F2I2").child("MWT").setValue(edt9.getText().toString());
+                    myref.child("users").child("UID").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").child("MWT").setValue(edt10.getText().toString());
+
 
                 }
 
 
                 if (rb2.isChecked()) {
-                    myref.child("it").child("IV Year").child("Sec A").child("001").child("VLSI").setValue(edt1.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("002").child("VLSI").setValue(edt2.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("003").child("VLSI").setValue(edt3.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("004").child("VLSI").setValue(edt4.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("005").child("VLSI").setValue(edt5.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("006").child("VLSI").setValue(edt6.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("007").child("VLSI").setValue(edt7.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("008").child("VLSI").setValue(edt8.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("009").child("VLSI").setValue(edt9.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("010").child("VLSI").setValue(edt10.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("012").child("VLSI").setValue(edt12.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("013").child("VLSI").setValue(edt13.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("014").child("VLSI").setValue(edt14.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("015").child("VLSI").setValue(edt15.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("016").child("VLSI").setValue(edt16.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("017").child("VLSI").setValue(edt17.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("018").child("VLSI").setValue(edt18.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("019").child("VLSI").setValue(edt19.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("020").child("VLSI").setValue(edt20.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("021").child("VLSI").setValue(edt21.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("022").child("VLSI").setValue(edt22.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("023").child("VLSI").setValue(edt23.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("024").child("VLSI").setValue(edt24.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("025").child("VLSI").setValue(edt25.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("026").child("VLSI").setValue(edt26.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("027").child("VLSI").setValue(edt27.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("028").child("VLSI").setValue(edt28.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("029").child("VLSI").setValue(edt29.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("030").child("VLSI").setValue(edt30.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("031").child("VLSI").setValue(edt31.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("032").child("VLSI").setValue(edt32.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("033").child("VLSI").setValue(edt33.getText().toString());
+                    myref.child("users").child("UID").child("ZWzIfIUFjHZ53mcja4NmHg3gbWx1").child("VLSI").setValue(edt1.getText().toString());
+                    myref.child("users").child("UID").child("iSX7BobuWdYymZgiI2CCl1Scris1").child("VLSI").setValue(edt2.getText().toString());
+                    myref.child("users").child("UID").child("WuRgtqRPHRWeqCT4Iiy6cNqrJO52").child("VLSI").setValue(edt3.getText().toString());
+                    myref.child("users").child("UID").child("7JJpJNiR7lNENWzNEAnm72xQPr23").child("VLSI").setValue(edt4.getText().toString());
+                    myref.child("users").child("UID").child("KIgQ5xKfoOQ5TZGeqaVHmR8l7Bs2").child("VLSI").setValue(edt5.getText().toString());
+                    myref.child("users").child("UID").child("e4aMvuDm1rZytl60OP91kVP2EAw1").child("VLSI").setValue(edt6.getText().toString());
+                    myref.child("users").child("UID").child("nQsxL5ueaEPFQn6cwcMdlumMyl93").child("VLSI").setValue(edt7.getText().toString());
+                    myref.child("users").child("UID").child("Cfz5LkLVMpfAs6rxgNSWRpETWTA2").child("VLSI").setValue(edt8.getText().toString());
+                    myref.child("users").child("UID").child("FZ03ydMj3iZEBhqkTblmElJ0F2I2").child("VLSI").setValue(edt9.getText().toString());
+                    myref.child("users").child("UID").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").child("VLSI").setValue(edt10.getText().toString());
+
                 }
                 if (rb3.isChecked()) {
-                    myref.child("it").child("IV Year").child("Sec A").child("001").child("WMC").setValue(edt1.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("002").child("WMC").setValue(edt2.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("003").child("WMC").setValue(edt3.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("004").child("WMC").setValue(edt4.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("005").child("WMC").setValue(edt5.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("006").child("WMC").setValue(edt6.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("007").child("WMC").setValue(edt7.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("008").child("WMC").setValue(edt8.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("009").child("WMC").setValue(edt9.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("010").child("WMC").setValue(edt10.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("012").child("WMC").setValue(edt12.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("013").child("WMC").setValue(edt13.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("014").child("WMC").setValue(edt14.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("015").child("WMC").setValue(edt15.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("016").child("WMC").setValue(edt16.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("017").child("WMC").setValue(edt17.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("018").child("WMC").setValue(edt18.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("019").child("WMC").setValue(edt19.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("020").child("WMC").setValue(edt20.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("021").child("WMC").setValue(edt21.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("022").child("WMC").setValue(edt22.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("023").child("WMC").setValue(edt23.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("024").child("WMC").setValue(edt24.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("025").child("WMC").setValue(edt25.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("026").child("WMC").setValue(edt26.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("027").child("WMC").setValue(edt27.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("028").child("WMC").setValue(edt28.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("029").child("WMC").setValue(edt29.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("030").child("WMC").setValue(edt30.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("031").child("WMC").setValue(edt31.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("032").child("WMC").setValue(edt32.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("033").child("WMC").setValue(edt33.getText().toString());
+                    myref.child("users").child("UID").child("ZWzIfIUFjHZ53mcja4NmHg3gbWx1").child("WMC").setValue(edt1.getText().toString());
+                    myref.child("users").child("UID").child("iSX7BobuWdYymZgiI2CCl1Scris1").child("WMC").setValue(edt2.getText().toString());
+                    myref.child("users").child("UID").child("WuRgtqRPHRWeqCT4Iiy6cNqrJO52").child("WMC").setValue(edt3.getText().toString());
+                    myref.child("users").child("UID").child("7JJpJNiR7lNENWzNEAnm72xQPr23").child("WMC").setValue(edt4.getText().toString());
+                    myref.child("users").child("UID").child("KIgQ5xKfoOQ5TZGeqaVHmR8l7Bs2").child("WMC").setValue(edt5.getText().toString());
+                    myref.child("users").child("UID").child("e4aMvuDm1rZytl60OP91kVP2EAw1").child("WMC").setValue(edt6.getText().toString());
+                    myref.child("users").child("UID").child("nQsxL5ueaEPFQn6cwcMdlumMyl93").child("WMC").setValue(edt7.getText().toString());
+                    myref.child("users").child("UID").child("Cfz5LkLVMpfAs6rxgNSWRpETWTA2").child("WMC").setValue(edt8.getText().toString());
+                    myref.child("users").child("UID").child("FZ03ydMj3iZEBhqkTblmElJ0F2I2").child("WMC").setValue(edt9.getText().toString());
+                    myref.child("users").child("UID").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").child("WMC").setValue(edt10.getText().toString());
+
                 }
                 if (rb4.isChecked()) {
-                    myref.child("it").child("IV Year").child("Sec A").child("001").child("IS").setValue(edt1.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("002").child("IS").setValue(edt2.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("003").child("IS").setValue(edt3.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("004").child("IS").setValue(edt4.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("005").child("IS").setValue(edt5.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("006").child("IS").setValue(edt6.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("007").child("IS").setValue(edt7.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("008").child("IS").setValue(edt8.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("009").child("IS").setValue(edt9.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("010").child("IS").setValue(edt10.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("012").child("IS").setValue(edt12.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("013").child("IS").setValue(edt13.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("014").child("IS").setValue(edt14.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("015").child("IS").setValue(edt15.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("016").child("IS").setValue(edt16.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("017").child("IS").setValue(edt17.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("018").child("IS").setValue(edt18.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("019").child("IS").setValue(edt19.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("020").child("IS").setValue(edt20.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("021").child("IS").setValue(edt21.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("022").child("IS").setValue(edt22.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("023").child("IS").setValue(edt23.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("024").child("IS").setValue(edt24.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("025").child("IS").setValue(edt25.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("026").child("IS").setValue(edt26.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("027").child("IS").setValue(edt27.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("028").child("IS").setValue(edt28.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("029").child("IS").setValue(edt29.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("030").child("IS").setValue(edt30.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("031").child("IS").setValue(edt31.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("032").child("IS").setValue(edt32.getText().toString());
-                    myref.child("it").child("IV Year").child("Sec A").child("033").child("IS").setValue(edt33.getText().toString());
+                    myref.child("users").child("UID").child("ZWzIfIUFjHZ53mcja4NmHg3gbWx1").child("IS").setValue(edt1.getText().toString());
+                    myref.child("users").child("UID").child("iSX7BobuWdYymZgiI2CCl1Scris1").child("IS").setValue(edt2.getText().toString());
+                    myref.child("users").child("UID").child("WuRgtqRPHRWeqCT4Iiy6cNqrJO52").child("IS").setValue(edt3.getText().toString());
+                    myref.child("users").child("UID").child("7JJpJNiR7lNENWzNEAnm72xQPr23").child("IS").setValue(edt4.getText().toString());
+                    myref.child("users").child("UID").child("KIgQ5xKfoOQ5TZGeqaVHmR8l7Bs2").child("IS").setValue(edt5.getText().toString());
+                    myref.child("users").child("UID").child("e4aMvuDm1rZytl60OP91kVP2EAw1").child("IS").setValue(edt6.getText().toString());
+                    myref.child("users").child("UID").child("nQsxL5ueaEPFQn6cwcMdlumMyl93").child("IS").setValue(edt7.getText().toString());
+                    myref.child("users").child("UID").child("Cfz5LkLVMpfAs6rxgNSWRpETWTA2").child("IS").setValue(edt8.getText().toString());
+                    myref.child("users").child("UID").child("FZ03ydMj3iZEBhqkTblmElJ0F2I2").child("IS").setValue(edt9.getText().toString());
+                    myref.child("users").child("UID").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").child("IS").setValue(edt10.getText().toString());
                 }
             }
         });
+
+        FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        Toast.makeText(this, "" + currentFirebaseUser.getUid(), Toast.LENGTH_SHORT).show();
+
+        String uid = currentFirebaseUser.getUid();
+        FirebaseDatabase.getInstance().getReference().child("users").child(uid).child("attendance");
+
 
     }
 }
