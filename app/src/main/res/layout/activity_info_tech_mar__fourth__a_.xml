@@ -10,5 +10,1340 @@
     android:focusableInTouchMode="true"
     tools:context="com.androidtutorialpoint.cardviewtutorial.MarksActivities.MarksActivities.InfoTech.InfoTech_Mar_Fourth_A_Activity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/sub1_mwt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="MWT"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sub2_vlsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="VLSI"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sub3_wmc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="WMC"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sub4_is"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="IS"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#e0f7fa"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Afshan Tarannum \n 1604-14-737-001"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_001"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_001"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#b2ebf2"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_002"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Sofia Mariyam \n 1604-14-737-002"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_002"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_002"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#80deea"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_003"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Bandari Srija \n 1604-14-737-003"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_003"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_003"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#4dd0e1"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_004"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Amena Arif \n 1604-14-737-004"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_004"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_004"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#26c6da"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_005"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Khadija Sultana \n 1604-14-737-005"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_005"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_005"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#00bcda"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_006"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Farah Sultana \n 1604-14-737-006"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_006"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_006"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#00acc1"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_007"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Ayesha Amreen \n 1604-14-737-007"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_007"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_007"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#0097a7"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_008"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Sidra Fatima \n 1604-14-737-008"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_008"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_008"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#00838f"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_009"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Vrinda Lakhotia \n 1604-14-737-009"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_009"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_009"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#006064"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_010"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Amtul Bushra \n 1604-14-737-010"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_010"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_010"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#004d40"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_012"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Ayesha Amreen \n 1604-14-737-012"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_012"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_012"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#00695c"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_013"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Magani Menitha \n 1604-14-737-013"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_013"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_013"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#00796b"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_014"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Ruquia Fatima \n 1604-14-737-014"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_014"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_014"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#00897b"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_015"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Mesba Suhath \n 1604-14-737-015"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_015"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_015"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#009688"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_016"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Shaistha Yasmeen \n 1604-14-737-016"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_016"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_016"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#26a69a"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Simran Kanthi \n 1604-14-737-017"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_017"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_017"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#26a69a"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_018"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Fariha Zayeem \n 1604-14-737-018"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_018"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_018"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#4db6ac"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_019"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Mahanoor Fatima \n 1604-14-737-019"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_019"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_019"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#80cbc4"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_020"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Asra Anjum \n 1604-14-737-020"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_020"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_020"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#b2dfdb"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_021"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Deeba Shagaff \n 1604-14-737-021"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_021"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_021"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#e0f2f1"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Bushra Wasmeen \n 1604-14-737-022"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_022"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_022"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#ede7f6"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_023"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Mohd Abdul Rab \n 1604-14-737-023"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_023"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_023"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#d1c4e9"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_024"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Sohail Ahmed \n 1604-14-737-024"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_024"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_024"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#b39ddb"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_025"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Jehangir Ali \n 1604-14-737-025"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_025"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_025"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#9575cd"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_026"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="B Akash \n 1604-14-737-026"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_026"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_026"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#7e57c2"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_027"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Razi ul Haq \n 1604-14-737-027"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_027"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_027"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#673ab7"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_028"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Ajmal Hussain \n 1604-14-737-028"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_028"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_028"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#5e35b1"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_029"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Rahul Nair \n 1604-14-737-029"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_029"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_029"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#512da8"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_030"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Shaik Salmeen \n 1604-14-737-030"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_030"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_030"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#4827a0"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_031"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Mushtaq Sajid \n 1604-14-737-031"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_031"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_031"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#311b92"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_032"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Iftequar Iqbal \n 1604-14-737-032"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_032"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_032"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardBackgroundColor="#0097a7"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_033"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Shaik Asad \n 1604-14-737-033"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_033"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_033"
+                    android:inputType="number"
+                    tools:fontFamily="sans-serif"
+                    tools:maxLength="2" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:onClick="sendBtn"
+            android:text="UPLOAD" />
+
+
+    </LinearLayout>
+
 
 </ScrollView>

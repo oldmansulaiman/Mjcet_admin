@@ -51,7 +51,7 @@ public class InfoTech_Att_Fourth_A_Activity extends AppCompatActivity {
         final EditText edt30 = (EditText) findViewById(R.id.edt_030);
         final EditText edt31 = (EditText) findViewById(R.id.edt_031);
         final EditText edt32 = (EditText) findViewById(R.id.edt_032);
-        final EditText edt33 = (EditText) findViewById(R.id.edt_032);
+        final EditText edt33 = (EditText) findViewById(R.id.edt_033);
 
 
         Button btn1 = (Button) findViewById(R.id.btn_001);
